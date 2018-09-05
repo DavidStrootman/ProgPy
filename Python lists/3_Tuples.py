@@ -4,4 +4,4 @@ sortedValues = []
 
 [sortedValues.append(value) for key, value in sortedList]
 
-print()
+print(sortedValues)
