@@ -1,4 +1,4 @@
-tupleShadow = ['A', 'C', 'B', 'B', 'C', 'A', 'C', 'C', 'B', 'D']
+tupleShadow = ('A', 'C', 'B', 'B', 'C', 'A', 'C', 'C', 'B', 'D')
 sortedList = sorted([[x, tupleShadow.count(x)] for x in set(tupleShadow)])
 sortedValues = []
 
