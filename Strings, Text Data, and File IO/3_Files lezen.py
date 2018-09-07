@@ -1,18 +1,12 @@
-def get_number_from_string(string: str):
-    return int(string[:6])
-
-
 with open('kaartnummers.txt', 'r') as file:
-    i = 0
-    line_with_highest_number = ''
-    for line in file:
+    i = highest_line = highest_number = 0
+
+    for line_number, line in enumerate(file):
         i += 1
-        number = get_number_from_string(line)
 
-        highest_line = get_number_from_string(line_with_highest_number)
-        if number > highest_line:
-            line_with_highest_number = line
-    file_length = i
-    print(line_with_highest_number)
-    print('Dit bestand heeft ' + str(file_length) + ' regels.')
+        if int(line[:6]) > highest_number:
+            highest_number = int(line[:6])
+            highest_line = line_number
 
+print('Dit bestand heeft ' + str(i) + ' regels')
+print('Het grootste kaartnummer is: ' + str(highest_number) + ' en dat staat op regel ' + str(highest_line))
