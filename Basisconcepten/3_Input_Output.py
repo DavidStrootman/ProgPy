@@ -1,5 +1,5 @@
-hourly_wage = input("Vul uw uurloon in")
-worked_hours = input("Vul uw gewerkte uren in")
+hourly_wage = input("Vul uw uurloon in: ")
+worked_hours = input("Vul uw gewerkte uren in: ")
 salary = round(float(hourly_wage) * float(worked_hours), 2)
 print('Wat verdien je per uur: ' + hourly_wage)
 print('Hoeveel uur heb je gewerkt: ' + worked_hours)
