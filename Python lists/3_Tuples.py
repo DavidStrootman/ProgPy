@@ -1,7 +1,6 @@
-tupleShadow = ('A', 'C', 'B', 'B', 'C', 'A', 'C', 'C', 'B', 'D')
-sortedList = sorted([[x, tupleShadow.count(x)] for x in set(tupleShadow)])
-sortedValues = []
+from collections import Counter
 
-[sortedValues.append(value) for key, value in sortedList]
+tuple_shadow = ('A', 'C', 'B', 'B', 'C', 'A', 'C', 'C', 'B', 'D')
+sorted_list = list(Counter(sorted(tuple_shadow)).values())
 
-print(sortedValues)
+print(sorted_list)
