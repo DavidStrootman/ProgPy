@@ -9,14 +9,14 @@ def get_bool(prompt):
 def get_age():
     while True:
         try:
-            return int(input('Geef je leeftijd op'))
+            return int(input('Geef je leeftijd op: '))
         except ValueError:
             print('Geen correcte leeftijd opgegeven')
 
 
 age = get_age()
 
-dutchPassport = get_bool('nederlands paspoort?')
+dutchPassport = get_bool('Heb je een Nederlands paspoort? [ja/nee] ')
 
 if 18 <= age and dutchPassport:
     print('Gefeliciteerd, je mag stemmen!')
