@@ -1,4 +1,4 @@
-score = input('geef je score op');
+score = input('Geef je score op: ')
 if 15 < float(score):
     print('Met een score van ' + score + ' ben je geslaagd!')
 else:
