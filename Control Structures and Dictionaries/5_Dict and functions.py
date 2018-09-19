@@ -18,4 +18,5 @@ def namen() -> print:
     if 1 > len(names):
         print('Er zijn geen namen opgegeven')
 
+
 namen()
