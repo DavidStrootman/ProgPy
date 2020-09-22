@@ -1,4 +1,4 @@
-# HUAssignments
+# ProgPy
 
 Python assignments for Programming course.
 
